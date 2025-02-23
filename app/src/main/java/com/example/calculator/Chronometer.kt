@@ -20,6 +20,7 @@ class Chronometer : AppCompatActivity() {
         val btnStart: Button = findViewById(R.id.btn_start)
         val btnPause: Button = findViewById(R.id.btn_pause)
         val btnReset: Button = findViewById(R.id.btn_reset)
+        val btnReturn: Button = findViewById(R.id.btn_return)
 
         btnStart.setOnClickListener {
             if (!running) {
@@ -42,6 +43,10 @@ class Chronometer : AppCompatActivity() {
             pauseOffset = 0
             chronometer.stop()
             running = false
+        }
+
+        btnReturn.setOnClickListener {
+            finish()
         }
     }
 }

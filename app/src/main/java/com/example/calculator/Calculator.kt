@@ -37,6 +37,7 @@ class Calculator : AppCompatActivity() {
         val btnEquals = findViewById<Button>(R.id.btnEquals)
         val btn0 = findViewById<Button>(R.id.btn0)
         val btnDot = findViewById<Button>(R.id.btnDot)
+        val btnReturn = findViewById<Button>(R.id.btn_return)
 
         // Configuramos los listeners para los botones numéricos y el punto
         val numberButtons = listOf(btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnDot)
@@ -84,6 +85,10 @@ class Calculator : AppCompatActivity() {
                     tvDisplay.text = "0"
                 }
             }
+        }
+
+        btnReturn.setOnClickListener {
+            finish()
         }
     }
 

@@ -42,4 +42,11 @@
                 android:text="Reiniciar"
                 android:layout_marginLeft="10dp"/>
     </LinearLayout>
+
+    <Button
+            android:id="@+id/btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Regresar"/>
 </LinearLayout>
